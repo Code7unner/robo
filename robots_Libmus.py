@@ -1,3 +1,8 @@
+# Example:
+# 20
+# 7
+# 2 3 4 9 11 15 17
+
 def run():
     l = int(input())
     n = int(input())
