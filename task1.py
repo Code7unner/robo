@@ -8,9 +8,7 @@ def run():
     a = ''
     a = f.read()
     a = a.replace('][', ', ')[2:-2]
-    print(a.split('), ('))
     a = list(map(float, ', '.join(a.split('), (')).split(', ')))
-    print(a)
     theta = []
     r = []
     for i in range(len(a)):
@@ -25,7 +23,7 @@ def run():
                 r.append(a[i])
     plt.polar(theta, r, '.', markersize=1)
     plt.axis([0, 2 * pi, 5, 4000])
-    plt.savefig('task1.png')
+    plt.savefig('laser_Limbus.png')
     plt.show()
 
 
